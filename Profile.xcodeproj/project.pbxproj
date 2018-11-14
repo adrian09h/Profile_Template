@@ -12,6 +12,8 @@
 		751816FE219C981F0084A7C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751816FC219C981F0084A7C7 /* Main.storyboard */; };
 		75181700219C982C0084A7C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751816FF219C982C0084A7C7 /* Assets.xcassets */; };
 		75181703219C982C0084A7C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75181701219C982C0084A7C7 /* LaunchScreen.storyboard */; };
+		7518170E219C9BAF0084A7C7 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7518170C219C9BAA0084A7C7 /* OpenSans-Regular.ttf */; };
+		7518170F219C9BB20084A7C7 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7518170D219C9BAA0084A7C7 /* OpenSans-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		751816FF219C982C0084A7C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75181702219C982C0084A7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75181704219C982D0084A7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7518170C219C9BAA0084A7C7 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		7518170D219C9BAA0084A7C7 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		751816F7219C981F0084A7C7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				7518170A219C9B6C0084A7C7 /* Resources */,
 				751816F8219C981F0084A7C7 /* AppDelegate.swift */,
 				751816FA219C981F0084A7C7 /* ViewController.swift */,
 				751816FC219C981F0084A7C7 /* Main.storyboard */,
@@ -62,6 +67,23 @@
 				75181704219C982D0084A7C7 /* Info.plist */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		7518170A219C9B6C0084A7C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7518170B219C9B790084A7C7 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7518170B219C9B790084A7C7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7518170C219C9BAA0084A7C7 /* OpenSans-Regular.ttf */,
+				7518170D219C9BAA0084A7C7 /* OpenSans-Semibold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +146,9 @@
 			files = (
 				75181703219C982C0084A7C7 /* LaunchScreen.storyboard in Resources */,
 				75181700219C982C0084A7C7 /* Assets.xcassets in Resources */,
+				7518170E219C9BAF0084A7C7 /* OpenSans-Regular.ttf in Resources */,
 				751816FE219C981F0084A7C7 /* Main.storyboard in Resources */,
+				7518170F219C9BB20084A7C7 /* OpenSans-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
