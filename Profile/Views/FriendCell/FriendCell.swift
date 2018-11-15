@@ -51,8 +51,7 @@ class FriendCell: UITableViewCell {
     
     func updateFollowButton(){
         if let isFollowing = self.friend?.isFollowing, isFollowing {
-            followButton.clipsToBounds = true
-            followButton.layer.cornerRadius = 2
+            followButton.cornerRadius = 2
             followButton.borderWidth = 1
             followButton.borderColor = UIColor.ProfileSection.activeGreen
             followButton.setTitle("Follow", for: .normal)
