@@ -37,8 +37,8 @@ class FriendCell: UITableViewCell {
             if let fullName = friend.fullName {
                 fullNameLabel.text = fullName
             }
-            if let locationName = friend.locationName {
-                locationLabel.text = locationName
+            if let userName = friend.userName {
+                locationLabel.text = userName
             }
             if let avatarImageName = friend.avatarImageName {
                 avatarImageV.image = UIImage(named: avatarImageName)
