@@ -9,16 +9,24 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qTd-RE-1la">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="qTd-RE-1la">
                                 <rect key="frame" x="137.5" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="DyV-tk-cbG"/>
@@ -26,24 +34,166 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phil Willis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba5-el-u2u">
-                                <rect key="frame" x="151.5" y="180" width="72.5" height="20"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="136.5" y="180" width="102" height="30"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="22"/>
+                                <color key="textColor" red="0.1764705882352941" green="0.22745098039215686" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Umx-m5-WsH" userLabel="dot1">
+                                <rect key="frame" x="57.5" y="281" width="10" height="10"/>
+                                <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="3dP-2W-Wyn"/>
+                                    <constraint firstAttribute="width" constant="10" id="QtZ-rr-J4e"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZJ-IJ-2E9" userLabel="dot2">
+                                <rect key="frame" x="182.5" y="281" width="10" height="10"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="HQn-TV-Qb3"/>
+                                    <constraint firstAttribute="width" constant="10" id="SBg-v7-zq2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ics-1Z-kt4" userLabel="dot3">
+                                <rect key="frame" x="307.5" y="281" width="10" height="10"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="XSK-Rw-YgK"/>
+                                    <constraint firstAttribute="height" constant="10" id="ZUg-hP-WKU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuT-ZZ-1eo">
+                                <rect key="frame" x="125" y="248" width="125" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SV2-9j-PrS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                <state key="normal" title="Favorites">
+                                    <color key="titleColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedFavorites:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8k-nE-ajf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCt-b3-XjF">
+                                <rect key="frame" x="0.0" y="248" width="125" height="40"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                <state key="normal" title="Places">
+                                    <color key="titleColor" red="0.1764705882352941" green="0.22745098039215686" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedPlaces:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIT-pl-nrx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjA-lL-mdt">
+                                <rect key="frame" x="250" y="248" width="125" height="40"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                <state key="normal" title="Friends">
+                                    <color key="titleColor" red="0.70980392160000005" green="0.70980392160000005" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedFriends:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5FH-7a-Gc8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbR-sT-bnO" userLabel="dash">
+                                <rect key="frame" x="24" y="303" width="327" height="1"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="DXG-73-4J2"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bbR-sT-bnO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="03N-Rb-dKz"/>
                             <constraint firstItem="qTd-RE-1la" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="5BI-e3-Az8"/>
+                            <constraint firstItem="pjA-lL-mdt" firstAttribute="leading" secondItem="KuT-ZZ-1eo" secondAttribute="trailing" id="5Da-rM-IYQ"/>
+                            <constraint firstItem="PCt-b3-XjF" firstAttribute="height" secondItem="KuT-ZZ-1eo" secondAttribute="height" id="B1H-xx-mB2"/>
+                            <constraint firstItem="ics-1Z-kt4" firstAttribute="centerX" secondItem="pjA-lL-mdt" secondAttribute="centerX" id="C5w-xX-rRI"/>
+                            <constraint firstItem="PCt-b3-XjF" firstAttribute="bottom" secondItem="Umx-m5-WsH" secondAttribute="bottom" constant="-3" id="Ect-Ft-lMm"/>
                             <constraint firstItem="qTd-RE-1la" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GHM-kH-qBd"/>
+                            <constraint firstItem="PCt-b3-XjF" firstAttribute="centerY" secondItem="KuT-ZZ-1eo" secondAttribute="centerY" id="GtR-wC-Bo3"/>
                             <constraint firstItem="ba5-el-u2u" firstAttribute="centerX" secondItem="qTd-RE-1la" secondAttribute="centerX" id="IOh-sU-XIS"/>
+                            <constraint firstItem="KuT-ZZ-1eo" firstAttribute="top" secondItem="ba5-el-u2u" secondAttribute="bottom" constant="38" id="Ihu-Lq-ObK"/>
+                            <constraint firstItem="pjA-lL-mdt" firstAttribute="centerY" secondItem="KuT-ZZ-1eo" secondAttribute="centerY" id="O7y-cU-4rF"/>
+                            <constraint firstItem="KuT-ZZ-1eo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RjX-K8-291"/>
+                            <constraint firstItem="KuT-ZZ-1eo" firstAttribute="leading" secondItem="PCt-b3-XjF" secondAttribute="trailing" id="TID-Od-1u2"/>
+                            <constraint firstItem="xZJ-IJ-2E9" firstAttribute="centerX" secondItem="KuT-ZZ-1eo" secondAttribute="centerX" id="fjv-Bo-uPT"/>
+                            <constraint firstItem="KuT-ZZ-1eo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.333" id="iEC-No-KoM"/>
+                            <constraint firstItem="pjA-lL-mdt" firstAttribute="height" secondItem="KuT-ZZ-1eo" secondAttribute="height" id="lNw-cf-XId"/>
+                            <constraint firstItem="bbR-sT-bnO" firstAttribute="top" secondItem="Umx-m5-WsH" secondAttribute="bottom" constant="12" id="n1b-zX-gYi"/>
+                            <constraint firstItem="Umx-m5-WsH" firstAttribute="centerX" secondItem="PCt-b3-XjF" secondAttribute="centerX" id="ogD-Zh-PVa"/>
+                            <constraint firstItem="xZJ-IJ-2E9" firstAttribute="centerY" secondItem="Umx-m5-WsH" secondAttribute="centerY" id="rXU-R5-tiY"/>
+                            <constraint firstItem="ics-1Z-kt4" firstAttribute="centerY" secondItem="Umx-m5-WsH" secondAttribute="centerY" id="reU-qo-lPe"/>
+                            <constraint firstItem="pjA-lL-mdt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wPZ-re-QOc"/>
+                            <constraint firstItem="PCt-b3-XjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xLO-T8-Pgn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bbR-sT-bnO" secondAttribute="trailing" constant="24" id="xyf-4u-OOt"/>
                             <constraint firstItem="ba5-el-u2u" firstAttribute="top" secondItem="qTd-RE-1la" secondAttribute="bottom" constant="8" id="zIo-3v-NwM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="avatarImgV" destination="qTd-RE-1la" id="hFc-oe-i9k"/>
+                        <outlet property="favoritesBtn" destination="KuT-ZZ-1eo" id="9yJ-8A-lAb"/>
+                        <outlet property="favoritesDotView" destination="xZJ-IJ-2E9" id="orW-fz-BVs"/>
+                        <outlet property="friendsBtn" destination="pjA-lL-mdt" id="vZQ-ZS-mYp"/>
+                        <outlet property="friendsDotView" destination="ics-1Z-kt4" id="UnQ-fY-Ucx"/>
+                        <outlet property="placesBtn" destination="PCt-b3-XjF" id="WSt-k0-Jqt"/>
+                        <outlet property="placesDotView" destination="Umx-m5-WsH" id="oQL-NZ-nfU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="248.80000000000001" y="-725.48725637181417"/>
+        </scene>
+        <!--Places View Controller-->
+        <scene sceneID="u3A-gv-i6J">
+            <objects>
+                <viewController storyboardIdentifier="PlacesViewController" id="caT-H3-ITM" customClass="PlacesViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JyN-Ju-dnj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="B95-pL-skf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpD-jj-5bh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="4"/>
+        </scene>
+        <!--Friends View Controller-->
+        <scene sceneID="8FN-eK-di9">
+            <objects>
+                <viewController storyboardIdentifier="FriendsViewController" id="L2x-h9-CSF" customClass="FriendsViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KrW-4O-GUa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="h0F-G3-bzm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t5H-de-Y1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="22"/>
+        </scene>
+        <!--Favorites View Controller-->
+        <scene sceneID="Q4Y-ph-ju9">
+            <objects>
+                <viewController storyboardIdentifier="FavoritesViewController" id="ocS-zr-6Xi" customClass="FavoritesViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y9h-F8-b4j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.47843137250000001" green="0.81176470590000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="nmp-7P-kVe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ru-27-ue9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550" y="3"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Avatar" width="45" height="45"/>
+    </resources>
 </document>

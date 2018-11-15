@@ -8,24 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		751816F9219C981F0084A7C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751816F8219C981F0084A7C7 /* AppDelegate.swift */; };
-		751816FB219C981F0084A7C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751816FA219C981F0084A7C7 /* ViewController.swift */; };
 		751816FE219C981F0084A7C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751816FC219C981F0084A7C7 /* Main.storyboard */; };
 		75181700219C982C0084A7C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751816FF219C982C0084A7C7 /* Assets.xcassets */; };
 		75181703219C982C0084A7C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75181701219C982C0084A7C7 /* LaunchScreen.storyboard */; };
 		7518170E219C9BAF0084A7C7 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7518170C219C9BAA0084A7C7 /* OpenSans-Regular.ttf */; };
 		7518170F219C9BB20084A7C7 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7518170D219C9BAA0084A7C7 /* OpenSans-Semibold.ttf */; };
+		75181712219CAA070084A7C7 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75181711219CAA070084A7C7 /* CAPSPageMenu.swift */; };
+		75181715219CAAE20084A7C7 /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75181714219CAAE10084A7C7 /* CAPSPageMenuConfiguration.swift */; };
+		75181717219CAB250084A7C7 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75181716219CAB250084A7C7 /* MenuItemView.swift */; };
+		75181719219CAB3F0084A7C7 /* CAPSPageMenu+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75181718219CAB3E0084A7C7 /* CAPSPageMenu+Options.swift */; };
+		7518171B219CAB970084A7C7 /* CAPSPageMenu+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7518171A219CAB970084A7C7 /* CAPSPageMenu+UIConfiguration.swift */; };
+		7518171E219CAC780084A7C7 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7518171C219CAC770084A7C7 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */; };
+		7518171F219CAC780084A7C7 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7518171D219CAC780084A7C7 /* CAPSPageMenu+UIScrollViewDelegate.swift */; };
+		75181721219CAEDB0084A7C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75181720219CAEDB0084A7C7 /* ProfileViewController.swift */; };
+		75181724219CAF7A0084A7C7 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75181723219CAF7A0084A7C7 /* PlacesViewController.swift */; };
+		75181726219CAF8A0084A7C7 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75181725219CAF8A0084A7C7 /* FavoritesViewController.swift */; };
+		75181728219CAF980084A7C7 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75181727219CAF980084A7C7 /* FriendsViewController.swift */; };
+		758FC30E219CD7460086FBBD /* PageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FC30D219CD7460086FBBD /* PageMenuViewController.swift */; };
+		758FC310219CE6040086FBBD /* UIColor+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FC30F219CE6040086FBBD /* UIColor+Extenstions.swift */; };
+		758FC312219CE6230086FBBD /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FC311219CE6230086FBBD /* UIView+Extensions.swift */; };
+		758FC315219CE69E0086FBBD /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FC314219CE69E0086FBBD /* UIButton+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		751816F5219C981F0084A7C7 /* Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Profile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		751816F8219C981F0084A7C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		751816FA219C981F0084A7C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		751816FD219C981F0084A7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		751816FF219C982C0084A7C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75181702219C982C0084A7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75181704219C982D0084A7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7518170C219C9BAA0084A7C7 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		7518170D219C9BAA0084A7C7 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		75181711219CAA070084A7C7 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		75181714219CAAE10084A7C7 /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
+		75181716219CAB250084A7C7 /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		75181718219CAB3E0084A7C7 /* CAPSPageMenu+Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+Options.swift"; sourceTree = "<group>"; };
+		7518171A219CAB970084A7C7 /* CAPSPageMenu+UIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIConfiguration.swift"; sourceTree = "<group>"; };
+		7518171C219CAC770084A7C7 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		7518171D219CAC780084A7C7 /* CAPSPageMenu+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		75181720219CAEDB0084A7C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		75181723219CAF7A0084A7C7 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		75181725219CAF8A0084A7C7 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		75181727219CAF980084A7C7 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		758FC30D219CD7460086FBBD /* PageMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageMenuViewController.swift; sourceTree = "<group>"; };
+		758FC30F219CE6040086FBBD /* UIColor+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extenstions.swift"; sourceTree = "<group>"; };
+		758FC311219CE6230086FBBD /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		758FC314219CE69E0086FBBD /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +86,11 @@
 		751816F7219C981F0084A7C7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				75181722219CAF3C0084A7C7 /* ViewControllers */,
+				75181729219CCA890084A7C7 /* Extensions */,
+				75181710219CA9A90084A7C7 /* Libraries */,
 				7518170A219C9B6C0084A7C7 /* Resources */,
 				751816F8219C981F0084A7C7 /* AppDelegate.swift */,
-				751816FA219C981F0084A7C7 /* ViewController.swift */,
 				751816FC219C981F0084A7C7 /* Main.storyboard */,
 				751816FF219C982C0084A7C7 /* Assets.xcassets */,
 				75181701219C982C0084A7C7 /* LaunchScreen.storyboard */,
@@ -84,6 +114,58 @@
 				7518170D219C9BAA0084A7C7 /* OpenSans-Semibold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		75181710219CA9A90084A7C7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				75181713219CAAC80084A7C7 /* CAPSPageMenu */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		75181713219CAAC80084A7C7 /* CAPSPageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				75181718219CAB3E0084A7C7 /* CAPSPageMenu+Options.swift */,
+				75181716219CAB250084A7C7 /* MenuItemView.swift */,
+				7518171C219CAC770084A7C7 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */,
+				7518171D219CAC780084A7C7 /* CAPSPageMenu+UIScrollViewDelegate.swift */,
+				7518171A219CAB970084A7C7 /* CAPSPageMenu+UIConfiguration.swift */,
+				75181711219CAA070084A7C7 /* CAPSPageMenu.swift */,
+				75181714219CAAE10084A7C7 /* CAPSPageMenuConfiguration.swift */,
+			);
+			path = CAPSPageMenu;
+			sourceTree = "<group>";
+		};
+		75181722219CAF3C0084A7C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				75181720219CAEDB0084A7C7 /* ProfileViewController.swift */,
+				75181723219CAF7A0084A7C7 /* PlacesViewController.swift */,
+				75181725219CAF8A0084A7C7 /* FavoritesViewController.swift */,
+				75181727219CAF980084A7C7 /* FriendsViewController.swift */,
+				758FC30D219CD7460086FBBD /* PageMenuViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		75181729219CCA890084A7C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				758FC313219CE6450086FBBD /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		758FC313219CE6450086FBBD /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				758FC30F219CE6040086FBBD /* UIColor+Extenstions.swift */,
+				758FC311219CE6230086FBBD /* UIView+Extensions.swift */,
+				758FC314219CE69E0086FBBD /* UIButton+Extensions.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +241,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				751816FB219C981F0084A7C7 /* ViewController.swift in Sources */,
 				751816F9219C981F0084A7C7 /* AppDelegate.swift in Sources */,
+				75181728219CAF980084A7C7 /* FriendsViewController.swift in Sources */,
+				75181721219CAEDB0084A7C7 /* ProfileViewController.swift in Sources */,
+				75181724219CAF7A0084A7C7 /* PlacesViewController.swift in Sources */,
+				75181712219CAA070084A7C7 /* CAPSPageMenu.swift in Sources */,
+				75181715219CAAE20084A7C7 /* CAPSPageMenuConfiguration.swift in Sources */,
+				758FC312219CE6230086FBBD /* UIView+Extensions.swift in Sources */,
+				75181717219CAB250084A7C7 /* MenuItemView.swift in Sources */,
+				7518171E219CAC780084A7C7 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,
+				758FC315219CE69E0086FBBD /* UIButton+Extensions.swift in Sources */,
+				7518171B219CAB970084A7C7 /* CAPSPageMenu+UIConfiguration.swift in Sources */,
+				7518171F219CAC780084A7C7 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
+				758FC310219CE6040086FBBD /* UIColor+Extenstions.swift in Sources */,
+				75181726219CAF8A0084A7C7 /* FavoritesViewController.swift in Sources */,
+				75181719219CAB3F0084A7C7 /* CAPSPageMenu+Options.swift in Sources */,
+				758FC30E219CD7460086FBBD /* PageMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
