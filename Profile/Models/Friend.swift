@@ -47,7 +47,7 @@ extension Friend{
         let alyssa = Friend.init(fullName: "Alyssa Coke", avatarImageName: "Avatar7", userName: "@ianbr", isFollowing: false)
         friendArray.append(alyssa)
         
-        let danish = Friend.init(fullName: "Danish Dhamani", avatarImageName: "Avatar8", userName: "@danish", isFollowing: false)
+        let danish = Friend.init(fullName: "Danish Dhamani", avatarImageName: "Avatar8", userName: "@alyssa", isFollowing: false)
         friendArray.append(danish)
         
         let paritosh = Friend.init(fullName: "Paritosh Gupta", avatarImageName: "Avatar9", userName: "@paritosh", isFollowing: false)

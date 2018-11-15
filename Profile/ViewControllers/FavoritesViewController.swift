@@ -35,3 +35,10 @@ extension FavoritesViewController: UITableViewDataSource{
         return cell
     }
 }
+
+// MARK: - TableView Delegate
+extension FavoritesViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+}

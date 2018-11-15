@@ -32,3 +32,10 @@ extension PlacesViewController: UITableViewDataSource{
         return cell
     }
 }
+
+// MARK: - TableView Delegate
+extension PlacesViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+}

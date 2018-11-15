@@ -20,9 +20,6 @@ class ProfileViewController: UIViewController, CAPSPageMenuDelegate {
     @IBOutlet weak var favoritesDotView: UIView!
     @IBOutlet weak var friendsDotView: UIView!
     
-    @IBOutlet weak var fakePageMenu: UIView!
-    
-    
     var pageMenu : CAPSPageMenu?
 
     override func viewDidLoad() {
@@ -31,7 +28,7 @@ class ProfileViewController: UIViewController, CAPSPageMenuDelegate {
         // initialize
         initViews()
         configurePageMenu()
-        /* ------ */
+       
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -39,7 +36,6 @@ class ProfileViewController: UIViewController, CAPSPageMenuDelegate {
     }
     
     // MARK: - Initialize
-    
     func initViews(){
         
     }
@@ -78,21 +74,28 @@ class ProfileViewController: UIViewController, CAPSPageMenuDelegate {
     
     @IBAction func clickedPlaces(_ sender: Any) {
         pageMenu?.moveToPage(0)
+        updateMenuState(index: 0)
     }
     
     @IBAction func clickedFavorites(_ sender: Any) {
         pageMenu?.moveToPage(1)
+        updateMenuState(index: 1)
     }
     
     @IBAction func clickedFriends(_ sender: Any) {
         pageMenu?.moveToPage(2)
+        updateMenuState(index: 2)
     }
     
     // MARK: - Page Menu Delegate
     
-    func willMoveToPage(_ controller: UIViewController, index: Int) {
+    func didMoveToPage(_ controller: UIViewController, index: Int) {
         print(index)
         // Update views
+        updateMenuState(index: index)
+    }
+    
+    func updateMenuState(index: Int){
         if index == 0 {
             placesBtn.update_ProfileMenuStateFor(isSelected: true)
             favoritesBtn.update_ProfileMenuStateFor(isSelected: false)
