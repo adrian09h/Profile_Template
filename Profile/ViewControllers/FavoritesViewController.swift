@@ -9,22 +9,29 @@
 import UIKit
 
 class FavoritesViewController: UIViewController {
-
+    
+    @IBOutlet var noFavoriteView: UIView!
+    @IBOutlet weak var tableView: UITableView!
+    var favoritePlaces : [Place] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.register(UINib(nibName: "PlaceCell", bundle: nil), forCellReuseIdentifier: "PlaceCell")
+        tableView.backgroundView = noFavoriteView
+    }
+}
+
+// MARK: - TableView DataSource
+extension FavoritesViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        noFavoriteView.isHidden = favoritePlaces.count != 0
+        return favoritePlaces.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceCell", for: indexPath) as! PlaceCell
+        
+        return cell
     }
-    */
-
 }

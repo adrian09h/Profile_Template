@@ -11,9 +11,9 @@ import UIKit
 extension UIButton{
     func update_ProfileMenuStateFor(isSelected : Bool){
         if isSelected {
-            setTitleColor(UIColor.ProfileViewColors.menuItemSelected, for: .normal)
+            setTitleColor(UIColor.ProfileSection.menuItemSelected, for: .normal)
         }else{
-           setTitleColor(UIColor.ProfileViewColors.menuItemDeselected, for: .normal)
+           setTitleColor(UIColor.ProfileSection.menuItemDeselected, for: .normal)
         }
     }
 }

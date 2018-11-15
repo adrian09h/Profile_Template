@@ -41,7 +41,7 @@ class ProfileViewController: UIViewController, CAPSPageMenuDelegate {
     // MARK: - Initialize
     
     func initViews(){
-        avatarImgV.round_Corner(radius: 5.0)
+        
     }
     func configurePageMenu(){
         var controllerArray : [UIViewController] = []
@@ -70,7 +70,7 @@ class ProfileViewController: UIViewController, CAPSPageMenuDelegate {
         pageMenu?.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 12).isActive = true
         pageMenu?.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -12).isActive = true
         pageMenu?.view.topAnchor.constraint(equalTo: self.placesDotView.bottomAnchor, constant: 12).isActive = true
-        pageMenu?.view.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 12).isActive = true
+        pageMenu?.view.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -12).isActive = true
         
     }
     
@@ -90,7 +90,7 @@ class ProfileViewController: UIViewController, CAPSPageMenuDelegate {
     
     // MARK: - Page Menu Delegate
     
-    func didMoveToPage(_ controller: UIViewController, index: Int) {
+    func willMoveToPage(_ controller: UIViewController, index: Int) {
         print(index)
         // Update views
         if index == 0 {

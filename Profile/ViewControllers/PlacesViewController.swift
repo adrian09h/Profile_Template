@@ -10,21 +10,25 @@ import UIKit
 
 class PlacesViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var placesArray : [Place] = Place.generatePlaces()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UINib(nibName: "PlaceCell", bundle: nil), forCellReuseIdentifier: "PlaceCell")
+    }
+}
 
-        // Do any additional setup after loading the view.
+// MARK: - TableView DataSource
+extension PlacesViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return placesArray.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceCell", for: indexPath) as! PlaceCell
+        cell.place = self.placesArray[indexPath.row]
+        return cell
     }
-    */
-
 }

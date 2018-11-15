@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7501F691219D1D0F0031FBC5 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7501F68F219D1D0F0031FBC5 /* PlaceCell.swift */; };
+		7501F692219D1D100031FBC5 /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7501F690219D1D0F0031FBC5 /* PlaceCell.xib */; };
+		7501F694219D33B70031FBC5 /* DesignableUI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7501F693219D33B70031FBC5 /* DesignableUI+Extensions.swift */; };
 		751816F9219C981F0084A7C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751816F8219C981F0084A7C7 /* AppDelegate.swift */; };
 		751816FE219C981F0084A7C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751816FC219C981F0084A7C7 /* Main.storyboard */; };
 		75181700219C982C0084A7C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751816FF219C982C0084A7C7 /* Assets.xcassets */; };
@@ -28,9 +31,16 @@
 		758FC310219CE6040086FBBD /* UIColor+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FC30F219CE6040086FBBD /* UIColor+Extenstions.swift */; };
 		758FC312219CE6230086FBBD /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FC311219CE6230086FBBD /* UIView+Extensions.swift */; };
 		758FC315219CE69E0086FBBD /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FC314219CE69E0086FBBD /* UIButton+Extensions.swift */; };
+		759D71BA219D588200F93EA3 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D71B9219D588200F93EA3 /* Place.swift */; };
+		759D71BF219D641700F93EA3 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D71BD219D641700F93EA3 /* FriendCell.swift */; };
+		759D71C0219D641700F93EA3 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759D71BE219D641700F93EA3 /* FriendCell.xib */; };
+		759D71C2219D67AD00F93EA3 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D71C1219D67AD00F93EA3 /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7501F68F219D1D0F0031FBC5 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		7501F690219D1D0F0031FBC5 /* PlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
+		7501F693219D33B70031FBC5 /* DesignableUI+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesignableUI+Extensions.swift"; sourceTree = "<group>"; };
 		751816F5219C981F0084A7C7 /* Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Profile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		751816F8219C981F0084A7C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		751816FD219C981F0084A7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +64,10 @@
 		758FC30F219CE6040086FBBD /* UIColor+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extenstions.swift"; sourceTree = "<group>"; };
 		758FC311219CE6230086FBBD /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		758FC314219CE69E0086FBBD /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		759D71B9219D588200F93EA3 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		759D71BD219D641700F93EA3 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		759D71BE219D641700F93EA3 /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
+		759D71C1219D67AD00F93EA3 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7501F68E219D1CD90031FBC5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				759D71BC219D62B400F93EA3 /* FriendCell */,
+				759D71BB219D62A700F93EA3 /* PlaceCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		751816EC219C981F0084A7C7 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +109,8 @@
 		751816F7219C981F0084A7C7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				759D71B8219D585D00F93EA3 /* Models */,
+				7501F68E219D1CD90031FBC5 /* Views */,
 				75181722219CAF3C0084A7C7 /* ViewControllers */,
 				75181729219CCA890084A7C7 /* Extensions */,
 				75181710219CA9A90084A7C7 /* Libraries */,
@@ -164,8 +189,36 @@
 				758FC30F219CE6040086FBBD /* UIColor+Extenstions.swift */,
 				758FC311219CE6230086FBBD /* UIView+Extensions.swift */,
 				758FC314219CE69E0086FBBD /* UIButton+Extensions.swift */,
+				7501F693219D33B70031FBC5 /* DesignableUI+Extensions.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		759D71B8219D585D00F93EA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				759D71B9219D588200F93EA3 /* Place.swift */,
+				759D71C1219D67AD00F93EA3 /* Friend.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		759D71BB219D62A700F93EA3 /* PlaceCell */ = {
+			isa = PBXGroup;
+			children = (
+				7501F68F219D1D0F0031FBC5 /* PlaceCell.swift */,
+				7501F690219D1D0F0031FBC5 /* PlaceCell.xib */,
+			);
+			path = PlaceCell;
+			sourceTree = "<group>";
+		};
+		759D71BC219D62B400F93EA3 /* FriendCell */ = {
+			isa = PBXGroup;
+			children = (
+				759D71BD219D641700F93EA3 /* FriendCell.swift */,
+				759D71BE219D641700F93EA3 /* FriendCell.xib */,
+			);
+			path = FriendCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				75181703219C982C0084A7C7 /* LaunchScreen.storyboard in Resources */,
+				759D71C0219D641700F93EA3 /* FriendCell.xib in Resources */,
 				75181700219C982C0084A7C7 /* Assets.xcassets in Resources */,
 				7518170E219C9BAF0084A7C7 /* OpenSans-Regular.ttf in Resources */,
+				7501F692219D1D100031FBC5 /* PlaceCell.xib in Resources */,
 				751816FE219C981F0084A7C7 /* Main.storyboard in Resources */,
 				7518170F219C9BB20084A7C7 /* OpenSans-Semibold.ttf in Resources */,
 			);
@@ -242,10 +297,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				751816F9219C981F0084A7C7 /* AppDelegate.swift in Sources */,
+				759D71BA219D588200F93EA3 /* Place.swift in Sources */,
 				75181728219CAF980084A7C7 /* FriendsViewController.swift in Sources */,
+				7501F691219D1D0F0031FBC5 /* PlaceCell.swift in Sources */,
 				75181721219CAEDB0084A7C7 /* ProfileViewController.swift in Sources */,
 				75181724219CAF7A0084A7C7 /* PlacesViewController.swift in Sources */,
 				75181712219CAA070084A7C7 /* CAPSPageMenu.swift in Sources */,
+				759D71BF219D641700F93EA3 /* FriendCell.swift in Sources */,
 				75181715219CAAE20084A7C7 /* CAPSPageMenuConfiguration.swift in Sources */,
 				758FC312219CE6230086FBBD /* UIView+Extensions.swift in Sources */,
 				75181717219CAB250084A7C7 /* MenuItemView.swift in Sources */,
@@ -253,8 +311,10 @@
 				758FC315219CE69E0086FBBD /* UIButton+Extensions.swift in Sources */,
 				7518171B219CAB970084A7C7 /* CAPSPageMenu+UIConfiguration.swift in Sources */,
 				7518171F219CAC780084A7C7 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
+				759D71C2219D67AD00F93EA3 /* Friend.swift in Sources */,
 				758FC310219CE6040086FBBD /* UIColor+Extenstions.swift in Sources */,
 				75181726219CAF8A0084A7C7 /* FavoritesViewController.swift in Sources */,
+				7501F694219D33B70031FBC5 /* DesignableUI+Extensions.swift in Sources */,
 				75181719219CAB3F0084A7C7 /* CAPSPageMenu+Options.swift in Sources */,
 				758FC30E219CD7460086FBBD /* PageMenuViewController.swift in Sources */,
 			);

@@ -20,10 +20,12 @@ extension UIColor{
         self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
     }
     
-    struct ProfileViewColors{
+    struct ProfileSection{
         static let menuItemSelected = UIColor.init(netHex: 0x2D3A4B)
         static let menuItemDeselected = UIColor.init(netHex: 0xB5B5B5)
         static let menuDotSelected = UIColor.init(netHex: 0x00CCB3)
         static let menuDotDeselected = UIColor.init(netHex: 0xEAEAEA)
+        static let activeGreen = UIColor.init(netHex: 0x00CCB3)
+        static let inactiveGray = UIColor.init(netHex: 0xBBC6CE)
     }
 }

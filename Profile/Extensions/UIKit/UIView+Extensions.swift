@@ -8,18 +8,14 @@
 
 import UIKit
 
-extension UIView{
+extension UIView{   
     
-    func round_Corner(radius : Float = 10){
-        self.layer.cornerRadius = CGFloat(radius)
-        self.clipsToBounds = true
-    }
     
     func update_DotStateFor(isSelected : Bool){
         if isSelected {
-            backgroundColor = UIColor.ProfileViewColors.menuDotSelected
+            backgroundColor = UIColor.ProfileSection.menuDotSelected
         }else{
-            backgroundColor = UIColor.ProfileViewColors.menuDotDeselected
+            backgroundColor = UIColor.ProfileSection.menuDotDeselected
         }
     }    
 }

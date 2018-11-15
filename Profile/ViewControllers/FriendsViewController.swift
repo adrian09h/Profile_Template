@@ -9,22 +9,27 @@
 import UIKit
 
 class FriendsViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    var friendsArray : [Friend] = Friend.generateFriends()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.register(UINib(nibName: "FriendCell", bundle: nil), forCellReuseIdentifier: "FriendCell")
+    }
+
+}
+
+// MARK: - TableView DataSource
+extension FriendsViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return friendsArray.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as! FriendCell
+        cell.friend = self.friendsArray[indexPath.row]
+        return cell
     }
-    */
-
 }
